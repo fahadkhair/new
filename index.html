@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <button type="button" class="btn-add-project" onclick="switchTab('btn-add-project')"> Add New Project </button>
+    <button type="button" class="btn-view-project" onclick="switchTab('list-project')"> View All Projects </button>
+
+    <div id="form-add-project"> 
+        <input type = "text" placeholder = "Project Name" id="project">
+        <input type = "text" placeholder = "Awardee" id="awardee">
+        <input type = "text" placeholder = "Awarded Bid Amount" id="a-price">
+        <input type = "text" placeholder = "Bidding Operator" id="b-operator">
+        <input type = "text" placeholder = "Quoting Operator" id="q-operator">
+        <input type = "text" placeholder = "Vendor's Price" id="vendor-price">
+        <input type = "text" placeholder = "TII Quoted Price" id="tii-price">
+        <input type = "text" placeholder = "Difference" id="difference">
+        <input type = "text" placeholder = "Lost Reason" id="reason">
+        
+        <button type="button" class="btn-add" onclick="addProject()">Add Project</button>
+    </div>
+
+    <div id="list-project">
+        <table id="table"> 
+            <tr> 
+                <th>Project Name</th>
+                <th>Awarded Vendor "Awardee"</th>
+                <th>Awarded Bid Amount</th>
+                <th>Bidding Operator</th>
+                <th>Quoting Operator</th>
+                <th>Vendor's Price</th>
+                <th>TII Quoted Price</th>
+                <th>Difference</th>
+                <th>Lost Reason</th>
+                
+            </tr>
+        </table>
+         </div>
+
+    <script src="schedule.js"></script>
+</body>
+
+</html>
